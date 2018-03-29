@@ -25,6 +25,7 @@ var cols = document.querySelectorAll("#BreakfastSec .rows .cols");
 var colsImg = document.querySelectorAll("#BreakfastSec .rows .cols .colsPhoto img");
 
 
+mainVideoPage.style.height = body.scrollHeight + "px";
 
 // function nextSlide() {
 //     var activeSlideImg = document.querySelector(".active");
