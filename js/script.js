@@ -27,28 +27,6 @@ var colsImg = document.querySelectorAll("#BreakfastSec .rows .cols .colsPhoto im
 
 mainVideoPage.style.height = body.scrollHeight + "px";
 
-// function nextSlide() {
-//     var activeSlideImg = document.querySelector(".active");
-//     var whiteCircle = document.querySelector(".whiteCircle");
-//     if (activeSlideImg.nextElementSibling != null) {
-//         activeSlideImg.classList.remove("active");
-//         activeSlideImg.nextElementSibling.classList.add("active");
-
-//     } else {
-//         activeSlideImg.classList.remove("active");
-//         slideImgs[0].classList.add("active");
-//     }
-
-//     if (whiteCircle.nextElementSibling != null) {
-//         whiteCircle.classList.remove("whiteCircle");
-//         whiteCircle.nextElementSibling.classList.add("whiteCircle");
-
-//     } else {
-//         whiteCircle.classList.remove("whiteCircle");
-//         circle[0].classList.add("whiteCircle");
-//     }
-// }
-
 // NavBarMenu Icons
 $("#navMenu ul li").each(function () {
     this.onmouseover = function () {
@@ -66,22 +44,22 @@ function nextSlide() {
 
     if (activeSlideImg.nextElementSibling != null) {
         activeSlideImg.animate([{ transform: "translate(0px)" },
-        { transform: "translate(-1000px)" }], { duration: 2000 });
+        { transform: "translate(-1000px)" }], { duration: 500 });
         activeSlideImg.nextElementSibling.animate([{ transform: "translate(1000px)" },
-        { transform: "translate(0px)" }], { duration: 2000 });
+        { transform: "translate(0px)" }], { duration: 500 });
         setTimeout(function () {
             activeSlideImg.classList.remove("active");
-        }, 2000);
+        }, 500);
         activeSlideImg.nextElementSibling.classList.add("active");
     } else {
         activeSlideImg.animate([{ transform: "translate(0px)" },
-        { transform: "translate(-1000px)" }], { duration: 2000 });
+        { transform: "translate(-1000px)" }], { duration: 500 });
         slideImgs[0].classList.add("active");
         slideImgs[0].animate([{ transform: "translate(1000px)" },
-        { transform: "translate(0px)" }], { duration: 1000 });
+        { transform: "translate(0px)" }], { duration: 500 });
         setTimeout(function () {
             activeSlideImg.classList.remove("active");
-        }, 1000);
+        }, 500);
 
     }
     if (whiteCircle.nextElementSibling != null) {
@@ -118,7 +96,7 @@ function prevSlide() {
 
 setInterval(function(){
     nextSlide();
-}, 6000);
+}, 3000);
 
 next.addEventListener("click", function () {
     nextSlide();
