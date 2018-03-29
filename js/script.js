@@ -138,7 +138,7 @@ slider.onmouseover = function () {
 
 slider.onmouseleave = function () {
     arrows.forEach(function (a) {
-        a.style.opacity = "0s";
+        a.style.opacity = "0";
         a.style.transition = "0.5s";
     });
 
