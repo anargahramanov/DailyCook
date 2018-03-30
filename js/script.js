@@ -94,34 +94,36 @@ function prevSlide() {
     }
 }
 
-setInterval(function(){
+setInterval(function () {
     nextSlide();
 }, 3000);
 
-next.addEventListener("click", function () {
-    nextSlide();
-});
+// function slideArrows() {
+//     next.addEventListener("click", function () {
+//         nextSlide();
+//     });
 
-prev.addEventListener("click", function () {
-    prevSlide();
+//     prev.addEventListener("click", function () {
+//         prevSlide();
 
-});
+//     });
 
-slider.onmouseover = function () {
-    arrows.forEach(function (a) {
-        a.style.opacity = "1";
-        a.style.transition = "0.5s";
-    });
+//     slider.onmouseover = function () {
+//         arrows.forEach(function (a) {
+//             a.style.opacity = "1";
+//             a.style.transition = "0.5s";
+//         });
 
-};
+//     };
 
-slider.onmouseleave = function () {
-    arrows.forEach(function (a) {
-        a.style.opacity = "0";
-        a.style.transition = "0.5s";
-    });
+//     slider.onmouseleave = function () {
+//         arrows.forEach(function (a) {
+//             a.style.opacity = "0";
+//             a.style.transition = "0.5s";
+//         });
 
-};
+//     };
+// };
 
 // Main Page Reciepes
 cols.forEach(function (col) {
