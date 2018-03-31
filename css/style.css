@@ -194,7 +194,6 @@ section .rows .cols{
     height: 300px;
     width: 23%;
     border: 1px solid lightgray;
-    cursor: pointer;
     transition: 0.5s;
 }
 
@@ -216,10 +215,15 @@ section .rows .cols .colsHeader{
     padding: 0 10px;
 }
 
-section .rows .cols .colsHeader h2{
+section .rows .cols .colsHeader a{
     font-size: 16px;
     font-weight: bold;
     color: #3e3a3a;
+    text-decoration: none;
+}
+
+section .rows .cols .colsHeader a:hover{
+    text-decoration: underline;
 }
 
 /* Slider Section */
