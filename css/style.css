@@ -195,6 +195,7 @@ section .rows .cols{
     width: 23%;
     border: 1px solid lightgray;
     transition: 0.5s;
+    border-radius: 10px;
 }
 
 section .rows .colsPhoto{
@@ -206,6 +207,7 @@ section .rows .colsPhoto img{
     width: 100%;
     height: 100%;
     padding: 3px;
+    border-radius: 10px;
 }
 
 section .rows .cols .colsHeader{
@@ -232,6 +234,7 @@ section .rows .cols .colsHeader a:hover{
     height: 400px;
     overflow: hidden;
     position: relative;
+    border-radius: 10px;
 }
 
 #slideSec #slider .arrows{

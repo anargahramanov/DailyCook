@@ -30,7 +30,7 @@
 
 #ingContent{
     width: 100%;
-    padding: 5px;
+    padding: 5px 15px;
     border-radius: 10px;
     box-shadow: 5px 5px 10px black;
     border: 1px solid lightgray;
@@ -38,7 +38,7 @@
 
 #direction{
     width: 100%;
-    padding: 9px;
+    padding: 9px 0;
 }
 
 #dirContent{
@@ -70,5 +70,16 @@
 #direction ul li
 {
     padding: 5px 0;
+    display: flex;
+    line-height: 23px;
 }
 
+#ingridient ul li i ,
+#direction ul li i{
+    margin-right: 5px;
+    width: 23px;
+    height: 23px;
+    line-height: 20px;
+    font-weight: bold;
+    color: #535a66;
+}

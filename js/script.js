@@ -15,7 +15,7 @@ var next = document.querySelector("#slider .next");
 var prev = document.querySelector("#slider .prev");
 
 // Foods Sec
-var cols = document.querySelectorAll("#BreakfastSec .rows .cols");
+var cols = document.querySelectorAll(".rows .cols");
 var colsImg = document.querySelectorAll("#BreakfastSec .rows .cols .colsPhoto img");
 
 // NavBarMenu Icons
